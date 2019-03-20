@@ -4,12 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-buttons',
   template: `
   <button mat-button>
-  <mat-icon>face</mat-icon>
+    <mat-icon>face</mat-icon>
     Click me!
   </button>
-
-  <mat-checkbox></mat-checkbox>
-
+  <mat-checkbox>Check me!</mat-checkbox>
   `,
   styles: []
 })

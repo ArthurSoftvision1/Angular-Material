@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MaterialModule } from '../shared/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
+
 import { DemoRoutingModule } from './demo-routing.module';
 import { ButtonsComponent } from './buttons/buttons.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatIconModule, MatButtonModule, MatCheckboxModule } from '@angular/material';
-import { FormsModule } from '@angular/forms';
 import { FlexboxComponent } from './flexbox/flexbox.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 
 @NgModule({
-  declarations: [ButtonsComponent, FlexboxComponent],
   imports: [
     CommonModule,
-    DemoRoutingModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCheckboxModule,
+    MaterialModule,
+    FlexLayoutModule,
     FormsModule,
-    FlexLayoutModule
-  ]
+    DemoRoutingModule
+  ],
+  declarations: [ButtonsComponent, FlexboxComponent, ExpansionPanelComponent]
 })
 export class DemoModule { }
